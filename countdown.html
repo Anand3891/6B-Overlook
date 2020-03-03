@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159132075-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159132075-1');
+</script>
+
+    <link href="selection.css" rel="stylesheet" type="text/css" />
+<link rel="icon" type="image/png" sizes="32x32" href="websiteicon.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-">
+    <title>6B Overlook - Countdown</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style2.css" rel="stylesheet" type="text/css" />
+    <style>
+p {
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  font-family: 'Montserrat';font-size: 22px;
+  
+  
+}
+  .mankidsthesedays {
+    font-family: 'Montserrat';font-size: 22px;
+     font-weight:normal; 
+  }
+  .oof {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  .bet {
+    font-weight:bold;
+    
+  }
+   
+
+}
+</style>
+  </head>
+  <body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" >6B Overlook</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="schoolschedule.html">School Schedule</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="countdown.html">Countdown</a>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="studysets.html">Study Sets</a>
+      </li>
+      <li>
+        <a class="nav-link disabled" href="#">Settings (Coming Soon)</a>
+      <li>
+
+      
+      
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+<!-- Display the countdown timer in an element -->
+<div class="mankidsthesedays">
+  
+<h1><center>Countdown Timer til' Spring Break</h1>
+</div>
+<p style="border:3px; border-style:solid; border-color: #B3000C; padding: 1em;" id="demo"></p>
+<div class="bet">
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Apr 1, 2020").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + " day(s), " + hours + " hour(s), "
+  + minutes + " minute(s), and " + seconds + " second(s). ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "Have a Nice Spring Break!";
+  }
+}, 1000);
+</script>
+</div>
+<div class="dfcent">
+ <center><img src = "https://blogs.newschool.edu/parsons-paris/files/2019/03/Spring-Break.jpg"></center>
+  <br><br><br>
+<br>
+<hr>
+<p class="italoc"style = "font-family:Verdana;font-size:16px;font-style:regular;"><center>© Overlook™ LTD | 2020 | All Rights Reserved | Est. 2019</p>
+<script src="time.js"></script>
+</body>
+
+
+

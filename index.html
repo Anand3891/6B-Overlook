@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--© 6C 2020-->
+<!-- Attention all coders:
+laytonwen has made many changes to this website
+1. You must make a github account and share your username with laytonwen
+2. I will be deleting this repl in three days for privacy reasons
+3. The new link is stratfordoverlook.netlify.com
+Have a nice day. -->
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-159132075-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-159132075-1');
+</script>
+
+    <link href="selection.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>6B Overlook - Login</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/png" sizes="128x128" href="websiteicon.ico">
+  </head>
+  <body>
+    <div class="wrapper fadeInDown">
+  <div id="formContent">
+    <!-- "I love making comments" - Anand 2020-->
+    <h2 class="active">Login to 6B Overlook</h2>
+
+    <!-- Random Comment -->
+    <div class="fadeIn first">
+  
+    </div>
+    <!--Anand Is Cool  - Layton Wen 2020-->
+    <!-- Login Form (Comments like these make the website look "professional") -->
+    <form name ="myform">
+      <input type="text" id="login" class="fadeIn second" name="username" placeholder="Enter your first name here"required>
+      <input type="password" type="password" id="password" class="fadeIn third" name="pword" placeholder="Enter your password here"required>
+      <br><br>
+      <center><c><input class="show-pass fa fa-eye fa-lg"type="checkbox" id="togglePassword">Show Password</input></c></center>
+      <br>
+   <script>
+     const togglePassword = document.getElementById('togglePassword');
+
+const showOrHidePassword = () => {
+  const password = document.getElementById('password');
+  if (password.type === 'password') {
+    password.type = 'text';
+  } else {
+    password.type = 'password';
+  }
+};
+togglePassword.addEventListener('change', showOrHidePassword);
+</script>
+      <input type="submit" name="Submit"class="fadeIn fourth" value="Log In" onclick= "validate()">
+       
+    </form>
+   <div id="formFooter">
+     <p class="fadeIn fifth"><marquee><center>You have to be in 6B to access this website</marquee></center></p>
+      <a class="underlineHover" href="don'tknowpassword.html">Don't Know Your Password?</a>
+      
+
+
+    </div>
+  </div>
+</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<script src="script.js" type = "text/javascript">
+</script>
+
+</script>

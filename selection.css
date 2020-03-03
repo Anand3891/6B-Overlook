@@ -1,0 +1,32 @@
+/*** Works on common browsers ***/
+::selection {
+    background-color: #2a75bb;
+    color: rgb(255, 255, 255);
+}
+p.italoc {
+  font-style: italic;
+}
+.nav-link disabled {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.nav-link disabled .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.nav-link disabled:hover .tooltiptext {
+  visibility: visible;
+}
+
